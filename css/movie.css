@@ -1,0 +1,185 @@
+body::-webkit-scrollbar {
+    background: #0F0F0F;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: 
+    linear-gradient(120deg, #9c20aa, #fb3570) border-box;
+}
+
+.vid-player {
+    padding-bottom: 45%;
+    margin-bottom: 40px;
+    background: 
+        linear-gradient(#282828 0 0) padding-box,
+        linear-gradient(to right, #9c20aa, #fb3570) border-box;
+    outline: none;
+    position: relative;
+    width: 100%;
+    height: 0;
+    border: 5px solid transparent;
+    border-style: solid;
+    border-width: 2.5px;
+}
+
+iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.movie-title {
+    font-family: 'Work Sans', sans-serif;
+    background-image: linear-gradient(356deg, #9c20aa, #fb3570);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    font-size: 1.02rem;
+    line-height: 3rem;
+    max-height: 2.8rem;
+    display: block;
+    height: 3rem;
+}
+
+.plot {
+    font-family: 'Work Sans', sans-serif;
+    background-image: linear-gradient(356deg, #9c20aa, #fb3570);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    font-size: 1.05rem;
+    line-height: 1.4rem;
+    max-height: 100%;
+    display: block;
+    height: 100%;
+    overflow: none;
+}
+
+.movie-ratings {
+    padding-top: 5px;
+    box-sizing: border-box;
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+    color: gray;
+    justify-content: space-between;
+}
+
+.movie-ratings .rating {
+    display: inline-block;
+    padding-right: 20px;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.movie-ratings .rated {
+    display: inline-block;
+    padding-right: 20px;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.movie-ratings .runtime {
+    display: inline-block;
+    padding-right: 20px;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.movie-ratings .year {
+    display: inline-block;
+    padding-right: 20px;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.movie-data {
+    justify-items: center;
+    justify-content: center;
+    padding-top: 45px;
+    align-items: flex-start;
+    background: 
+        linear-gradient(#282828 0 0) padding-box,
+        linear-gradient(to right, #9c20aa, #fb3570) border-box;
+    outline: none;
+    display: flex;
+    width: auto;
+    max-width: 900px;
+    border-radius: 30px;
+    border: 5px solid transparent;
+    border-radius: 1.625rem;
+    border-style: solid;
+    border-width: 2px;
+}
+
+.movie-data-box {
+    margin-left: 45px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.label {
+    font-weight: bold;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.02rem;
+    line-height: 3rem;
+    background-image: linear-gradient(260deg, #9c20aa, #fb3570);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    margin-right: 10px;
+}
+
+.value {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.02rem;
+    line-height: 3rem;
+    background-image: linear-gradient(260deg, #9c20aa, #fb3570);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    margin-left: 50px;
+}
+
+.label, .value {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.label span, .value span {
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .movie-data {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .movie-data-box {
+        width: 100%;
+    }
+
+    .movie-standalone-poster {
+        justify-content: center;
+        justify-items: center;
+    }
+}
+
+.movie-standalone-poster img:hover {
+    color: #FB3570; box-shadow: 0 0 80px #FB3570;
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+}

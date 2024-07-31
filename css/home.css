@@ -1,0 +1,88 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+body {
+    background-color: #1d2021;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+
+img {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.movie-background {
+    background-color: #1D2021;
+    background-image: url("../images/background_movie_collage.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+}
+
+.search {
+    border-radius: 50px 0 0 50px;
+    height: 50%;
+}
+
+.gradient-intro-text {
+    background-image: linear-gradient(280deg, #9c20aa, #fb3570);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    font-size: 80px;
+    font-weight: bolder;
+    font-family: "Arial";
+}
+
+.gradient-caption-text {
+    background-image: linear-gradient(80deg, #9c20aa, #fb3570);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    font-size: 50px;
+    font-weight: normal;
+    font-family: "Arial";
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.65); /* Adjust the opacity here */
+    z-index: -1;
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    z-index: 1;
+}
+
+.overlay-content {
+    text-align: center;
+}
+
+.background-hover {
+    outline: none;
+    border: 3px solid transparent;
+    border-style: solid;
+    background-color: rgba(29, 32, 33, 0.6);
+    padding: 30px;
+    border-radius: 23px;
+}
