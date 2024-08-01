@@ -11,14 +11,14 @@ if (type === 'movie') {
     output = `
         <div class="vid-player">
             <iframe allowfullscreen frameborder='0' 
-                src=https://vidsrc.to/embed/movie/${id}/>
+                src=https://vidsrc.me/embed/movie/${id}/>
             </iframe>
         </div>`;
 } else {
     output = `
         <div class="vid-player">
             <iframe allowfullscreen frameborder='0' 
-                src=https://vidsrc.to/embed/tv/${id}/>
+                src=https://vidsrc.me/embed/tv/${id}/>
             </iframe>
         </div>`;
 }
