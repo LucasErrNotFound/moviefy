@@ -1,13 +1,6 @@
-const APIKEY = '11e349e';
-// const APIKEY = '48aa722f'; // not mine
-
+const APIKEY = '48aa722f';
 var searchInput = document.getElementById('searchQueryInput');
 searchInput.addEventListener('input', findAndDisplayMovies());
-
-fetch(`http://www.omdbapi.com/?t=avengers&apikey=${APIKEY}`)
-    .then(res => res.json())
-    .then(data => console.log(data));
-
 
 async function fetchMoviesAndTVShows(query, page_number) {
     const movieResponse = await fetch(`http://www.omdbapi.com/?apikey=${APIKEY}&s=${query}&page=${page_number}&type=movie`);
