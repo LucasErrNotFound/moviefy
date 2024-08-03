@@ -39,7 +39,7 @@ document.getElementById('searchQueryInput').addEventListener('keypress', functio
 });
 
 
-fetch(`http://www.omdbapi.com/?i=${id}&apikey=${APIKEY}`)
+fetch(`https://www.omdbapi.com/?i=${id}&apikey=${APIKEY}`)
     .then(res => res.json())
     .then(data => generateMovieDescription(data))
     .catch(error => console.error('Error fetching movie data: ', error));

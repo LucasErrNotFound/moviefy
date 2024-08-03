@@ -3,10 +3,10 @@ var searchInput = document.getElementById('searchQueryInput');
 searchInput.addEventListener('input', findAndDisplayMovies());
 
 async function fetchMoviesAndTVShows(query, page_number) {
-    const movieResponse = await fetch(`http://www.omdbapi.com/?apikey=${APIKEY}&s=${query}&page=${page_number}&type=movie`);
+    const movieResponse = await fetch(`https://www.omdbapi.com/?apikey=${APIKEY}&s=${query}&page=${page_number}&type=movie`);
     const movieData = await movieResponse.json();
 
-    const tvResponse = await fetch(`http://www.omdbapi.com/?apikey=${APIKEY}&s=${query}&page=${page_number}&type=series`);
+    const tvResponse = await fetch(`https://www.omdbapi.com/?apikey=${APIKEY}&s=${query}&page=${page_number}&type=series`);
     const tvData = await tvResponse.json();
 
     const combinedResults = {
