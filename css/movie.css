@@ -159,6 +159,7 @@ iframe {
 
 .label span, .value span {
     margin-bottom: 20px;
+    width: 90%;
 }
 
 @media (max-width: 768px) {
@@ -174,7 +175,12 @@ iframe {
     .movie-standalone-poster {
         justify-content: center;
         justify-items: center;
+        margin-right: 30px;
     }
+}
+
+.movie-standalone-poster {
+    margin-left: 30px;
 }
 
 .movie-standalone-poster img:hover {

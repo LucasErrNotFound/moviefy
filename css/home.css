@@ -86,3 +86,15 @@ img {
     padding: 30px;
     border-radius: 23px;
 }
+
+@media (max-width: 600px) {
+    .background-hover {
+        zoom: 50%;
+    }
+}
+
+@media (max-width: 900px) {
+    .background-hover {
+        zoom: 90%;
+    }
+}

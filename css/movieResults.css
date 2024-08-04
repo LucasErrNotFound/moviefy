@@ -331,3 +331,23 @@ section .head .start .title {
     box-shadow: 0 0 45px #FB3570;
     transition: all 0.3s ease-in-out;
 }
+
+@media (max-width: 600px) {
+    .movie-container {
+        zoom: 80%;
+    }
+}
+
+@media (max-width: 600px) {
+    .searchBar {
+        width: 250px;
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 400px) {
+    .searchBar {
+        width: 200px;
+        max-width: 200px;
+    }
+}
