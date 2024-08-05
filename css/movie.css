@@ -179,6 +179,12 @@ iframe {
     }
 }
 
+@media (max-width: 450px) {
+    .movie-standalone-poster img{
+        max-width: 100%;
+    }
+}
+
 .movie-standalone-poster {
     margin-left: 30px;
 }
