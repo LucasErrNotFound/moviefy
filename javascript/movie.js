@@ -1,6 +1,4 @@
-const APIKEY = '11e349e';
-// const APIKEY = '48aa722f'; // not mine
-
+const APIKEY = '48aa722f';
 const url_parameter = new URLSearchParams(window.location.search);
 const id = url_parameter.get('id');
 const type = url_parameter.get('type');
@@ -87,4 +85,5 @@ function generateMovieDescription(movie) {
                 </div>
 `;
     document.querySelector('.info-movie').innerHTML = output;
+    document.title = movie.Title;
 }
