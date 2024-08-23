@@ -73,21 +73,42 @@ async function fetchMovieDetailsConcurrently(movies, limit = 5) {
 function generateMovieHTML(movie) {
     const movie_poster_img = (movie.Poster !== 'N/A') ? movie.Poster : 'images/unknown_movie_poster.webp';
     return `
-        <div class="movie-item">
-            <div class="movie-poster">
-                <a href="movie.html?id=${movie.imdbID}&type=${movie.Type}"><img src="${movie_poster_img}" alt="Favourites Poster"></a>
-            </div>
-            <div class="movie-details">
-                <div class="movie-details-box">
-                    <div class="movie-info-box">
-                        <span class="year">${movie.Year}</span>
-                        <span class="type">${(movie.Type).toUpperCase()}</span>
-                        <span class="runtime">${(movie.Runtime) || 'N/A'}</span>
-                    </div>
-                    <p class="movie-name"><a href="movie.html?id=${movie.imdbID}&type=${movie.Type}">${movie.Title}</a></p>
+        <article class="movie-card">
+            <div class="movie-cover-box">
+                <div class="movie-poster">
+                    <a href="movie.html?id=${movie.imdbID}&type=${movie.Type}"><img src="${movie_poster_img}"></a>
                 </div>
             </div>
-        </div>`;
+            <div class="movie-scroll-box">
+                <div class="movie-info-box">
+                    <h3>${movie.Title}</h3>
+                    <div class="movie-details">
+                        <div class="movie-details-box">
+                            <span class="year">${movie.Year}</span>
+                            <span class="type">${movie.Type}</span>
+                            <span class="runtime">${movie.Runtime}</span>
+                        </div>
+                    </div>
+                    <p class="director">by
+                        <a href="">${movie.Director}</a>
+                    </p>
+                    <p class="description" title="">${movie.Plot}</p>
+                    <ul class="movie-genres">
+                        <li title="">
+                            <a href="">${movie.Genre}</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="movie-top-box">
+                <div class="movie-strip">
+                    <div class="title">
+                        <h3>${movie.Title}</h3>
+                    </div>
+                </div>
+            </div>
+        </article>
+`;
 }
 
 function handleSearch() {
