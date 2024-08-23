@@ -12,7 +12,7 @@
 </div>
 
 <div align="center">
-  <img src="images/movieLists.png" width="95%"/>
+  <img src="images/movieList.png" width="95%"/>
   <img src="images/movie_1.png" width="47%"/>
   <img src="images/movie_2.png" width="47%"/>
 </div>
