@@ -125,9 +125,7 @@ footer {
     max-width: 1800px;
     width: 100%;
     padding-right: 15px;
-    padding-left: 15px;
     margin-right: auto;
-    margin-left: auto;
     box-sizing: border-box;
 }
 
@@ -464,7 +462,6 @@ a {
         background-image: linear-gradient(345deg, #9c20aa, #fb3570);
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-clip: text;
     -moz-text-fill-color: transparent;
 }
 
@@ -548,9 +545,8 @@ a {
 
 .movie-name a {
     background-image: linear-gradient(345deg, #9c20aa, #fb3570);
-    -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
-    -moz-background-clip: text;
     -moz-text-fill-color: transparent;
     font-size: 1.02rem;
     line-height: 1.4rem;

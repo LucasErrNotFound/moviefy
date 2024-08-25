@@ -3,8 +3,7 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-thumb {
-    background: 
-    linear-gradient(120deg, #9c20aa, #fb3570) border-box;
+    background: linear-gradient(120deg, #9c20aa, #fb3570) border-box;
 }
 
 .vid-player {
@@ -13,7 +12,6 @@ body::-webkit-scrollbar-thumb {
     background: 
         linear-gradient(#282828 0 0) padding-box,
         linear-gradient(to right, #9c20aa, #fb3570) border-box;
-    outline: none;
     position: relative;
     width: 100%;
     height: 0;
@@ -127,32 +125,23 @@ iframe {
 }
 
 .label {
-    font-weight: bold;
-    font-family: 'Work Sans', sans-serif;
-    font-size: 1.02rem;
-    line-height: 3rem;
-    background-image: linear-gradient(260deg, #9c20aa, #fb3570);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-background-clip: text;
-    -moz-text-fill-color: transparent;
     margin-right: 10px;
 }
 
 .value {
-    font-family: 'Work Sans', sans-serif;
-    font-size: 1.02rem;
-    line-height: 3rem;
-    background-image: linear-gradient(260deg, #9c20aa, #fb3570);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-background-clip: text;
-    -moz-text-fill-color: transparent;
     margin-left: 50px;
 }
 
 .label, .value {
     display: flex;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.02rem;
+    line-height: 3rem;
+    background-image: linear-gradient(260deg, #9c20aa, #fb3570);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
     flex-direction: column;
     align-items: flex-start;
 }

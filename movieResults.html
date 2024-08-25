@@ -40,7 +40,7 @@
                 <div class="search-results">
                     <p id="searchQuery"></p>
                 </div>
-                <div class"movie-item-container">
+                <div class="movie-item-container">
                     <div class="aside-wrapper">
                         <aside class="main">
                             <section>
@@ -64,7 +64,7 @@
         const urlParams = new URLSearchParams(window.location.search);
         const query = urlParams.get('query');
         document.getElementById('searchQuery').style.color = '#FB3570';
-        document.getElementById('searchQuery').style.fontStyle = 'bold';
+        document.getElementById('searchQuery').style.fontWeight = 'bold';
         document.getElementById('searchQuery').style.fontSize = 'xx-large';
         document.getElementById('searchQuery').style.fontFamily = 'Work Sans';
         document.getElementById('searchQuery').textContent = `You Searched For: ${query}`;

@@ -3,6 +3,7 @@
 body {
     background-color: #1d2021;
     font-family: 'Open Sans', sans-serif;
+    font-display: swap;
     margin: 0;
     padding: 0;
     height: 100vh;
@@ -16,11 +17,8 @@ img {
 }
 
 .movie-background {
-    background-color: #1D2021;
-    background-image: url("../images/background_movie_collage.jpg");
+    background: #1d2021 url("../images/background_movie_collage.jpg") no-repeat center center fixed;
     background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
     top: 0;
     left: 0;
     width: 100%;
@@ -33,17 +31,7 @@ img {
     height: 50%;
 }
 
-.gradient-intro-text {
-    background-image: linear-gradient(280deg, #9c20aa, #fb3570);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-background-clip: text;
-    -moz-text-fill-color: transparent;
-    font-size: 80px;
-    font-weight: bolder;
-    font-family: "Arial";
-}
-
+.gradient-intro-text,
 .gradient-caption-text {
     background-image: linear-gradient(80deg, #9c20aa, #fb3570);
     -webkit-background-clip: text;
@@ -53,6 +41,19 @@ img {
     font-size: 50px;
     font-weight: normal;
     font-family: "Arial";
+    font-display: swap;
+}
+
+.gradient-intro-text {
+    font-size: 80px;
+    font-weight: bolder;
+    font-display: swap;
+}
+
+.gradient-caption-text {
+    font-size: 50px;
+    font-weight: normal;
+    font-display: swap;
 }
 
 .overlay {
